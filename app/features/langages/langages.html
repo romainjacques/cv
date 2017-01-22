@@ -1,0 +1,27 @@
+<div ng-cloak>
+<md-content class="md-padding" layout-xs="column" layout="row" layout-wrap>
+        <md-card ng-repeat="lang in langs.data | orderBy : '-note'" flex-xs flex-gt-xs="30" layout="column">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">{{lang.name}}</span>
+                    <span class="md-headline">
+                        <i class="fa fa-star" aria-hidden="true" ng-if="lang.stars.full >= 1"></i>
+                        <i class="fa fa-star" aria-hidden="true" ng-if="lang.stars.full >= 2"></i>
+                        <i class="fa fa-star" aria-hidden="true" ng-if="lang.stars.full >= 3"></i>
+                        <i class="fa fa-star" aria-hidden="true" ng-if="lang.stars.full >= 4"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true" ng-if="lang.stars.half == 1"></i>
+                        <i class="fa fa-star-o" aria-hidden="true" ng-if="lang.stars.empty >= 1"></i>
+                        <i class="fa fa-star-o" aria-hidden="true" ng-if="lang.stars.empty >= 2"></i>
+                        <i class="fa fa-star-o" aria-hidden="true" ng-if="lang.stars.empty >= 3"></i>
+                    </span>
+                </md-card-title-text>
+                <md-card-title-media>
+                    <div class="md-media-md card-media">
+                        <img src="./../../assets/logo_{{lang.logo}}.png" class="lang_img"/>
+                    </div>
+
+                </md-card-title-media>
+            </md-card-title>
+        </md-card>
+ </md-content>
+</div>

@@ -1,0 +1,14 @@
+<div ng-controller="formationCtrl" ng-cloak ng-model="pouet">
+    <md-content ng-repeat="formation in formations.data" class="md-padding" layout-xs="column" layout="row" layout-wrap>
+        <div flex-xs flex-gt-xs="30" layout="column">
+            <h2 class="exp_center">{{formation.startDate}} - {{formation.endDate}} </h2>
+            <img src="{{formation.imgPath}}" class="exp_img"/>
+        </div>
+        <div flex-xs flex-gt-xs="70" layout="column"  >
+            <h2>{{formation.title_fr | uppercase}}</h2>
+            <p>{{formation.location_fr}}</p>
+            <h3>{{formation.description_fr}}</h3>
+        </div>
+    </md-content>
+
+</div>

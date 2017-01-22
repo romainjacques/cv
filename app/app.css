@@ -1,0 +1,61 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+#header {
+  text-align: center;
+}
+.exp_img {
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+  display: block;
+}
+
+.exp_center {
+  text-align: center;
+}
+.profil {
+  height: 200px;
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+.toright {
+  text-align: right;
+}
+
+.lang_img {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+.flag {
+    height: 15px;
+    width: 20px;
+}

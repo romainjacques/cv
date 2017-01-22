@@ -1,0 +1,16 @@
+<div ng-controller="expProCtrl" ng-cloak>
+<md-content ng-repeat="experience in experiences.data" class="md-padding" layout-xs="column" layout="row" layout-wrap>
+            <div flex-xs flex-gt-xs="30" layout="column">
+                <h2 class="exp_center">{{experience.startDate}} - {{experience.endDate}}</h2>
+                <img src="{{experience.imgPath}}" class="exp_img" />
+            </div>
+            <div flex-xs flex-gt-xs="70" layout="column">
+                <h2>{{experience.company | uppercase}} - {{experience.role}}</h2>
+                <p>{{experience.location}}</p>
+                <h3>{{experience.description}}</h3>
+              <p ng-repeat="task in experience.tasks">
+                    <i class="fa fa-thumb-tack" aria-hidden="true"></i> {{task}}
+                </p>
+            </div>
+</md-content>
+</div>

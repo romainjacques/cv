@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="fr" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="fr" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="fr" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="fr" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CV Romain JACQUES</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="bower_components/flexbox/css/media-object.css">
+  <link rel="stylesheet" href="app.css">
+    <link rel="icon" href="assets/favicon.png" />
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body ng-controller="myAppCtrl" ng-cloak>
+<div ng-cloak>
+        <md-toolbar layout="row">
+            <div flex-xs flex-gt-xs="85" layout="column" class="exp_center">
+                Curriculum Vitae </br>
+                {{'JOB' | translate}}
+            </div>
+            <div flex-xs flex-gt-xs="15" layout="column">
+                <i class="fa fa-language" aria-hidden="true"><md-input-container>
+
+                    <md-select ng-model="$scope.langs" aria-label="true" placeholder="{{currentLang | uppercase | translate}}">
+                        <md-option ng-repeat="lang in langs" value="{{lang}}" ng-click="changeLanguage(lang)">
+                               <img src="./assets/flag_{{lang}}.png" class="flag"/> {{lang |uppercase|translate}}
+                        </md-option>
+                    </md-select>
+                </md-input-container></i>
+            </div>
+        </md-toolbar>
+    <div >
+        <md-content class="md-padding">
+            <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+                <md-nav-item md-nav-href="#!/accueil" name="accueil">{{'HOME' | translate}}</md-nav-item>
+                <md-nav-item md-nav-href="#!/exppro" name="exppro">{{'EXP_PRO' | translate}}</md-nav-item>
+                <md-nav-item md-nav-href="#!/formation" name="formation">{{'TRAINING' | translate}}</md-nav-item>
+                <md-nav-item md-nav-href="#!/langages" name="langages">{{'LANGUAGES' | translate}}</md-nav-item>
+                <md-nav-item md-nav-href="#!/contact" name="contact">{{'CONTACT_ME' | translate}}</md-nav-item>
+            </md-nav-bar>
+
+        </md-content>
+        <div ng-view>
+
+        </div>
+    </div>
+</div>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-messages/angular-messages.js"></script>
+  <script src="bower_components/angular-translate/angular-translate.js"></script>
+  <script src="bower_components/angular-translate-storage-local/angular-translate-storage-local.js"></script>
+  <script src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-sanitize.js"></script>
+  <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
+  <script src="app.js"></script>
+  <script src="features/accueil/accueil.js"></script>
+  <script src="features/expPro/exppro.js"></script>
+  <script src="features/formation/formation.js"></script>
+  <script src="features/contact/contact.js"></script>
+  <script src="features/langages/langages.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

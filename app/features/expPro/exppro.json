@@ -1,0 +1,45 @@
+[
+  {
+    "name":"adecal",
+    "company": "adecal",
+    "location": "Nouméa, Nouvelle-Calédonie",
+    "role": "Stagiaire développement Web",
+    "description": "Stagiaire développeur chez ADECAL affecté à un projet d application Web innovante" ,
+    "startDate": "08/2016",
+    "endDate":"11/2016",
+    "imgPath" : "./../../assets/exp_adecal.png",
+    "tasks" : [
+      "Créer des pages et des formulaires à partir de l existant",
+      "Création d un outil d import de fichier GeoJSON",
+      "Fonction de changement de langue"
+    ]
+  },
+  {
+    "name": "econocom",
+    "company":"econocom",
+    "location": "Marseille et sa région",
+    "role":"Technicien assistant utilisateur",
+    "description": "Technicien assistant utilisateur chez différents clients à dimmension internationale tels que ITER,Bourbon, CNIM",
+    "startDate": "01/2011",
+    "endDate":"03/2016",
+    "imgPath" : "./../../assets/exp_econocom.png",
+    "tasks" : [
+      "Technicien d exploitation Ctrix",
+      "HelpDesk français/anglais",
+      "Support visioconférence et téléphonie"
+    ]
+  },
+  {
+    "name":"seatpi",
+    "company":"sea tpi",
+    "location": "La Ciotat",
+    "role": "Technicien HelpDesk",
+    "description": "Technicien HelpDesk en centre d appel ou sur site client",
+    "startDate": "01/2010",
+    "endDate":"08/2010",
+    "imgPath" : "./../../assets/exp_seatpi.png",
+    "tasks" : [
+      "helpdesk français/anglais"
+    ]
+  }
+]

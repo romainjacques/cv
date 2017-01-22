@@ -1,0 +1,86 @@
+[{
+  "name": "Angular JS",
+  "logo": "angular",
+  "description": "le framework Javascript par Google",
+  "note": 3,
+  "stars": {
+    "full": 3,
+    "half": 0,
+    "empty": 2
+  }
+},    {
+"name": "Angular Material",
+"logo": "angular_material",
+"description": "Le material design adapté à Angular",
+  "note": 2.5,
+"stars": {
+      "full": 2,
+      "half":1,
+      "empty": 2
+      }
+},    {
+"name": "HTML/CSS",
+"logo": "html",
+"description": "Ai-je besoin de les présenter ? :)",
+  "note": 3,
+"stars": {
+  "full": 3,
+  "half": 0,
+  "empty": 2
+}
+},{
+"name": "Bootstrap",
+"logo": "bootstrap",
+"description": "L outil de Responsive design",
+  "note": 2.5,
+"stars": {
+  "full": 2,
+  "half":1,
+  "empty": 2
+}
+},{
+"name": "PHP",
+"logo": "php",
+"description": "Le langage pour dynamiser vos pages",
+  "note": 2,
+"stars": {
+  "full": 2,
+  "half": 0,
+  "empty": 3
+}
+},
+{
+"name": "Couch DB",
+"logo": "couchdb",
+"description": "La base de données orientée documents",
+  "note": 2.5,
+"stars": {
+  "full": 2,
+  "half":1,
+  "empty": 2
+  }
+},
+  {
+    "name": "TypeScript",
+    "logo": "typescript",
+    "description": "Le superset de Javascript",
+    "note": 2.5,
+    "stars": {
+      "full": 2,
+      "half": 1,
+      "empty": 2
+    }
+  },
+{
+"name": "MySQL",
+"logo": "mysql",
+"description": "La base de données bien connue",
+  "note": 2,
+"stars": {
+  "full": 2,
+  "half":0,
+  "empty": 3
+  }
+}
+
+]
